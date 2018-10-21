@@ -21,12 +21,8 @@ body {
 .container__nav-top {
 	position: fixed;
 	left: 0;
-	top: 0;
-	width: 100%;
-
-	position: fixed;
-	top: 0;
-    left: 0;
+    top: 0;
+    width: 100%;
 
     display: flex;
 }
