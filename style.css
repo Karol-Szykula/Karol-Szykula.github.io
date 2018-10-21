@@ -7,12 +7,17 @@ body {
 	background-image: url("images/ep_naturalwhite.png");
 }
 
+.menu__content-offset {
+    padding-top: 40px;
+}
+
 .container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
+/* navbar-top */
 .container__nav-top {
 	position: fixed;
 	left: 0;
@@ -21,23 +26,28 @@ body {
 
 	position: fixed;
 	top: 0;
-	left: 0;
+    left: 0;
+
+    display: flex;
+}
+
+.container__nav-top__logo, .container__nav-top__toggle {
+	flex-grow: 1;
+    background-color: #9E9E9E;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .container__nav-top__flex-wrapper {
-    width: 100%;
-
+    flex-grow: 5;
     display: flex;
     justify-content: center;
     list-style-type: none;
 
 	padding: 0;
-	margin: 0;
-}
-
-.container__nav-top__flex-wrapper__logo {
-	flex-grow: 1;
-	background-color: #9E9E9E;
+    margin: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
 }
 
 .container__nav-top__flex-wrapper__menu-item {
@@ -62,7 +72,7 @@ body {
 
 }
 
-.container__nav-top__flex-wrapper__logo__link {
+.container__nav-top__logo__link, .container__nav-top__toggle__link {
 	text-decoration: none;
     text-align: center;
     display: block;
@@ -70,6 +80,11 @@ body {
 	padding: 10px;
 	color: #bfbfbf;
 	text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.533333px 0.833333px 0px, rgb(0, 0, 0) -0.416667px 0.916667px 0px, rgb(0, 0, 0) -0.983333px 0.133333px 0px, rgb(0, 0, 0) -0.65px -0.75px 0px, rgb(0, 0, 0) 0.283333px -0.966667px 0px, rgb(0, 0, 0) 0.966667px -0.283333px 0px;
+    flex-grow: 1;
+}
+
+.container__nav-top__toggle {
+    display: none;
 }
 
 .container__nav-top__flex-wrapper__menu-item__link:visited {
@@ -80,9 +95,25 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+    .container__nav-top {
+        flex-direction: column;
+    }
+
 	.container__nav-top__flex-wrapper {
 		flex-direction: column;
-	}
+    }
+
+    .menu__content-offset {
+        padding-top: 155px;
+    }
+
+    .container__nav-top__flex-wrapper--collapsed {
+        max-height: 0 !important;
+    }
+
+    .container__nav-top__toggle {
+        display: flex;
+    }
 
 }
 
@@ -148,13 +179,6 @@ input[type=submit]:focus
 .container__section-hero__box__link:hover{
     background-image: linear-gradient(#e9a3a3,#ff7675);
     color: #bfbfbf;
-}
-
-@media only screen and (max-width: 768px) {
-
-	.container__section-hero{
-		margin-top: 120px;
-	}
 }
 
 /* about me */
