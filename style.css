@@ -223,7 +223,8 @@ input[type=submit]:focus
     }
 
     .container__about-me__img_wrapper__img {
-        width: 100%;
+        width: auto;
+        max-width: 100%;
         height: auto;
         border-radius: 50%;
     }
