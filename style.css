@@ -1,6 +1,10 @@
 /* navbar */
 body {
-	margin: 0px;
+
+    padding: 0;
+    margin: 0px;
+    /* Background pattern from Toptal Subtle Patterns */
+	background-image: url("images/ep_naturalwhite.png");
 }
 
 .container {
@@ -135,6 +139,63 @@ body {
 @media only screen and (max-width: 576px) {
 
 	.container__section-hero{
-		margin-top: 55px;
+		margin-top: 120px;
 	}
+}
+
+/* about me */
+.container__about-me {
+    display: flex;
+    justify-content: center;
+}
+
+.container__about-me__text {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__about-me__img_wrapper {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 577px) {
+    .container__about-me__text {
+        min-width: 50%;
+
+    }
+
+    .container__about-me__img_wrapper__img {
+        max-width: 50%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .container__about-me {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .container__about-me__text {
+        width: 100%;
+    }
+
+    .container__about-me__img_wrapper__img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+}
+
+.container__technologies {
+    display: flex;
 }
