@@ -1,10 +1,15 @@
 /* navbar */
+html {
+    overflow-x: hidden;
+}
+
 body {
 
     padding: 0;
     margin: 0px;
     /* Background pattern from Toptal Subtle Patterns */
-	background-image: url("images/ep_naturalwhite.png");
+    background-image: url("images/ep_naturalwhite.png");
+    overflow-x: hidden;
 }
 
 .menu__content-offset {
