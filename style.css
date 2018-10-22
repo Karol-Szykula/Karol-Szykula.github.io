@@ -98,8 +98,8 @@ body, html {
 		flex-direction: column;
     }
 
-    .menu__content-offset {
-        padding-top: 155px;
+     .container__section-hero__box{
+        margin-top: 155px;
     }
 
     .container__nav-top__flex-wrapper--collapsed {
