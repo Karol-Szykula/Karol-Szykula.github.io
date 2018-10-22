@@ -18,22 +18,33 @@
 </head>
 <body class="menu__content-offset">
 
+        <nav class="nav-top">
+                <div class="nav-top__logo">
+                    <a class="nav-top__logo__link" href="#">Karol Szykuła</a>
+                </div>
+
+                <div class="nav-top__toggle">
+                        <a class="nav-top__toggle__link" href="#">
+                            <div class="nav-top__toggle__link__button"></div>
+                            <div class="nav-top__toggle__link__button"></div>
+                            <div class="nav-top__toggle__link__button"></div>
+                        </a>
+                </div>
+
+                <ul class="nav-top__flex-wrapper">
+                    <li class="nav-top__flex-wrapper__menu-item">
+                        <a class="nav-top__flex-wrapper__menu-item__link" href="#id-hero">
+                            Home</a></li>
+                    <li class="nav-top__flex-wrapper__menu-item">
+                        <a class="nav-top__flex-wrapper__menu-item__link" href="#id-about-me">
+                            O mnie</a></li>
+                    <li class="nav-top__flex-wrapper__menu-item">
+                        <a class="nav-top__flex-wrapper__menu-item__link" href="#id-technologies">
+                            Technologie</a></li>
+                </ul>
+            </nav>
+
     <main id="id-container" class="container">
-        <nav class="container__nav-top">
-            <div class="container__nav-top__logo">
-                <a class="container__nav-top__logo__link" href="#">Karol Szykuła</a>
-            </div>
-
-            <div class="container__nav-top__toggle">
-                    <a class="container__nav-top__toggle__link" href="#">X</a>
-            </div>
-
-            <ul class="container__nav-top__flex-wrapper">
-                <li class="container__nav-top__flex-wrapper__menu-item"><a class="container__nav-top__flex-wrapper__menu-item__link" href="#id-hero">Hero</a></li>
-                <li class="container__nav-top__flex-wrapper__menu-item"><a class="container__nav-top__flex-wrapper__menu-item__link" href="#id-about-me">O mnie</a></li>
-                <li class="container__nav-top__flex-wrapper__menu-item"><a class="container__nav-top__flex-wrapper__menu-item__link" href="#id-technologies">Technologie</a></li>
-            </ul>
-        </nav>
 
         <section id="id-hero" class="container__section-hero">
 
@@ -47,13 +58,19 @@
                     Skontaktuj się!
                 </p>
                 <br>
-                <form action="https://emaillabs-sender.herokuapp.com/" method="POST">
+                <form class="container__section-hero__box__form-container" action="https://emaillabs-sender.herokuapp.com/" method="POST">
 
                     <input type="text" name="emails[]" placeholder="Wpisz swój e-mail">
+
+                    <input type="hidden" name="subject" value="Tytuł">
+
+                    <input type="hidden" name="message" value="Treść">
 
                     <input type="hidden" name="from" value="karol.szykula@gmail.com">
 
                     <input type="hidden" name="redirect" value="https://karol-szykula.github.io/">
+
+                    <input type="hidden" name="fromName" value="Karol-Szykula">
 
                     <input class="button" type="submit" value="Wyślij">
 
