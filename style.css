@@ -193,9 +193,12 @@ input[type=submit]:focus
 
 .container__about-me__img_wrapper {
     padding: 20px;
-
     justify-content: center;
     flex-grow: 1;
+
+    display: flex;
+
+    align-items: center;
 }
 
 .container__about-me__img_wrapper__img {
