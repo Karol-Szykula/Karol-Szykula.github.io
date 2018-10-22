@@ -193,7 +193,7 @@ input[type=submit]:focus
 
 .container__about-me__img_wrapper {
     padding: 20px;
-    display: flex;
+
     justify-content: center;
     flex-grow: 1;
 }
