@@ -194,21 +194,21 @@ input[type=submit]:focus
     padding: 20px;
     display: flex;
     justify-content: center;
+    width: 50%;
 }
 
-@media only screen and (min-width: 768px) {
-    .container__about-me__text {
-        min-width: 50%;
 
-    }
-
-    .container__about-me__img_wrapper__img {
-        max-width: 50%;
-        height: auto;
-        border-radius: 50%;
-    }
+.container__about-me__text {
+    width: 50%;
 
 }
+
+.container__about-me__img_wrapper__img {
+    max-width:100%;
+    height: auto;
+    border-radius: 50%;
+}
+
 
 @media only screen and (max-width: 768px) {
     .container__about-me {
@@ -223,8 +223,7 @@ input[type=submit]:focus
     }
 
     .container__about-me__img_wrapper__img {
-        width: auto;
-        max-width: 100%;
+        max-width:100%;
         height: auto;
         border-radius: 50%;
     }
