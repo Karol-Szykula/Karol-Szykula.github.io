@@ -198,14 +198,8 @@ input[type=submit]:focus
     flex-grow: 1;
 }
 
-
-.container__about-me__text {
-    width: 50%;
-
-}
-
 .container__about-me__img_wrapper__img {
-    max-width:100%;
+    width:100%;
     height: auto;
     border-radius: 50%;
 }
