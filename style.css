@@ -7,7 +7,7 @@ body, html {
     background-image: url("images/ep_naturalwhite.png");
     overflow-x: hidden;
 
-    font-family: Helvetica, Arial, Sans-Serif;
+    font-family:  Sans-Serif;
 }
 
 .container {
@@ -127,7 +127,6 @@ body, html {
 
 }
 
-
 /* hero */
 .container__section-hero{
 	/* margin-top: 55px; */
@@ -135,7 +134,9 @@ body, html {
     width:100%;
 
     background-image:url(images/hero-img.jpg);
-    background-size:100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
     justify-content: center;
 	align-items: center;
 
@@ -145,7 +146,6 @@ body, html {
     padding:10px;
     color: white;
     text-align: center;
-    font-family:  'Lucida Sans';
     font-weight: bold;
     text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.533333px 0.833333px 0px, rgb(0, 0, 0) -0.416667px 0.916667px 0px, rgb(0, 0, 0) -0.983333px 0.133333px 0px, rgb(0, 0, 0) -0.65px -0.75px 0px, rgb(0, 0, 0) 0.283333px -0.966667px 0px, rgb(0, 0, 0) 0.966667px -0.283333px 0px;
 }
